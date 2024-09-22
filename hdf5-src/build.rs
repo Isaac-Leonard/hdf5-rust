@@ -24,6 +24,21 @@ fn main() {
         cfg.define(option, "OFF");
     }
 
+    cfg.define("TEST_LFS_WORKS_RUN", "OFF");
+    cfg.define("H5_PRINTF_LL_TEST_RUN", "OFF");
+    cfg.define("H5_PRINTF_LL_TEST_RUN__TRYRUN_OUTPUT", "OFF");
+    cfg.define("H5_LDOUBLE_TO_LONG_SPECIAL_RUN", "OFF");
+    cfg.define("H5_LDOUBLE_TO_LONG_SPECIAL_RUN__TRYRUN_OUTPUT", "OFF");
+    cfg.define("H5_LONG_TO_LDOUBLE_SPECIAL_RUN", "OFF");
+    cfg.define("H5_LONG_TO_LDOUBLE_SPECIAL_RUN__TRYRUN_OUTPUT", "OFF");
+    cfg.define("H5_LDOUBLE_TO_LLONG_ACCURATE_RUN", "OFF");
+    cfg.define("H5_LDOUBLE_TO_LLONG_ACCURATE_RUN__TRYRUN_OUTPUT", "OFF");
+    cfg.define("H5_LLONG_TO_LDOUBLE_CORRECT_RUN", "OFF");
+    cfg.define("H5_LLONG_TO_LDOUBLE_CORRECT_RUN__TRYRUN_OUTPUT", "OFF");
+    cfg.define("H5_DISABLE_SOME_LDOUBLE_CONV_RUN", "OFF");
+    cfg.define("H5_DISABLE_SOME_LDOUBLE_CONV_RUN__TRYRUN_OUTPUT", "OFF");
+    cfg.define("H5_NO_ALIGNMENT_RESTRICTIONS_RUN", "OFF");
+    cfg.define("H5_NO_ALIGNMENT_RESTRICTIONS_RUN__TRYRUN_OUTPUT", "OFF");
     // disable these by default, can be enabled via features
     for option in &[
         "HDF5_ENABLE_DEPRECATED_SYMBOLS",
